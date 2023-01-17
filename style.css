@@ -5,13 +5,14 @@
     --slate:#64748b;
     --lightSlate:#94a3b8;
     --lighterSlate:#cbd5e1;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
     display: grid;
     height: 100vh;
     margin: 0;
-    grid-template-columns: minmax(100px, 1fr) 6fr;
+    grid-template-columns: minmax(320px, 1fr) 6fr;
     grid-template-rows: minmax(200px, 1fr) 7fr;
 }
 
@@ -29,10 +30,36 @@ span {
     background-color: var(--slate);
 }
 
-.dashItem {
-    display: flex;
-    align-items: center;
+.dashRow {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 20px;
     justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.dashIcon {
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: navajowhite;
+    opacity: .4;
+}
+
+.dashText {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.dash {
+    margin-top: 40px;
+    font-size: 32px;
 }
 
 .header {
