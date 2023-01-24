@@ -39,14 +39,12 @@ span {
 }
 
 .click {
-    background-color: var(--darkerSlate);
     animation-name: clickAnimation;
     animation-duration: .2s;
-    transition: .2s;
 }
 
 @keyframes clickAnimation {
-    to {transform: scale(.97);}
+    to {transform: scale(.94);}
 }
 
 .sidebar {
@@ -67,7 +65,7 @@ span {
     color: whitesmoke;
     font-size: 24px;
     font-weight: bold;
-    transition: all 1s ease;
+    transition: all .7s ease;
 }
 
 .dashRow:not(.dash) {
@@ -76,7 +74,7 @@ span {
 }
 
 .dashRow:hover:not(.dash) {
-    padding-left: 10px;
+    padding-left: 20px;
     background-position: 0% 100%;
 }
 

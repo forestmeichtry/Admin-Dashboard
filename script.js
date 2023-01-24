@@ -1,4 +1,4 @@
-let clickables = document.querySelectorAll(".dashRow");
+let clickables = document.querySelectorAll(".clickable");
 
 clickables.forEach(element => {
         element.addEventListener('click', onClick);
