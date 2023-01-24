@@ -38,6 +38,17 @@ span {
     align-items: center;
 }
 
+.click {
+    background-color: var(--darkerSlate);
+    animation-name: clickAnimation;
+    animation-duration: .2s;
+    transition: .2s;
+}
+
+@keyframes clickAnimation {
+    to {transform: scale(.97);}
+}
+
 .sidebar {
     display: grid;
     grid-auto-rows: 60px;
@@ -56,6 +67,17 @@ span {
     color: whitesmoke;
     font-size: 24px;
     font-weight: bold;
+    transition: all 1s ease;
+}
+
+.dashRow:not(.dash) {
+    background: linear-gradient(to left, transparent 50%, #5a697e 50%) right;
+    background-size: 200% 100%;
+}
+
+.dashRow:hover:not(.dash) {
+    padding-left: 10px;
+    background-position: 0% 100%;
 }
 
 .dashIcon {
